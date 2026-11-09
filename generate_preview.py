@@ -94,3 +94,4 @@ for title, desc, bg, border_col, tx, ty in theme_cards:
 
 themes.save(os.path.join(assets_dir, "preview-themes.png"))
 print("Saved preview-themes.png")
+

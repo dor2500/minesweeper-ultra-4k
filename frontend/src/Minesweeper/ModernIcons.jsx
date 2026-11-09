@@ -50,3 +50,4 @@ export const VectorNumber = ({ num }) => {
   if (!num || num <= 0) return null;
   return <span className={`vector-digit num-${num}`}>{num}</span>;
 };
+

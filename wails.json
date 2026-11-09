@@ -1,20 +1,20 @@
 {
   "$schema": "https://wails.io/schemas/config.v2.json",
-  "name": "Minesweeper XP",
-  "outputfilename": "Minesweeper XP",
+  "name": "Minesweeper XP Ultra 4K",
+  "outputfilename": "Minesweeper XP Ultra 4K",
   "frontend:install": "npm install",
   "frontend:build": "npm run build",
   "frontend:dev:watcher": "npm run dev",
   "frontend:dev:serverUrl": "auto",
   "author": {
-    "name": "Akshay Kalose",
-    "email": "akshay@kalose.net"
+    "name": "Dor P",
+    "email": "dor@example.com"
   },
   "info": {
-    "companyName": "Minesweeper XP",
-    "productName": "Minesweeper XP",
-    "productVersion": "0.3.0",
-    "copyright": "Copyright 2024 Akshay Kalose",
-    "comments": "The classic Minesweeper XP (+ 98 and 3.1) on macOS, Windows, and Linux."
+    "companyName": "Dor P",
+    "productName": "Minesweeper XP Ultra 4K",
+    "productVersion": "2.0.0",
+    "copyright": "Copyright 2026 Dor P",
+    "comments": "The modern remaster of Minesweeper with 4K Vector Graphics, AI Solver, Shields, and Themes."
   }
 }
