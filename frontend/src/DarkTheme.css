@@ -1,0 +1,127 @@
+/* Dark / Royale Noir Theme */
+[data-theme="Dark"] {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+[data-theme="Dark"] .window {
+  background: #282828 !important;
+  box-shadow: inset -1px -1px #111, inset 1px 1px #555, inset -2px -2px #1f1f1f, inset 2px 2px #444 !important;
+}
+
+[data-theme="Dark"] .title-bar {
+  background: linear-gradient(180deg, #1f2e46 0%, #0f1722 100%) !important;
+}
+
+[data-theme="Dark"] .title-bar-text {
+  color: #64b5f6 !important;
+}
+
+[data-theme="Dark"] .mine__top-bar {
+  background-color: #2f2f2f !important;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+[data-theme="Dark"] .mine__top-bar__text {
+  color: #ccc !important;
+}
+
+[data-theme="Dark"] .mine__top-bar__text:hover {
+  background-color: #1565c0 !important;
+  color: #fff !important;
+}
+
+[data-theme="Dark"] .mine__content {
+  background-color: #222222 !important;
+  border-left: #444 solid 3px !important;
+  border-top: #444 solid 3px !important;
+  border-right: #111 solid 3px !important;
+  border-bottom: #111 solid 3px !important;
+}
+
+[data-theme="Dark"] .mine__score-bar {
+  background-color: #1a1a1a !important;
+  border-top: #0a0a0a solid 2px !important;
+  border-left: #0a0a0a solid 2px !important;
+  border-right: #444 solid 2px !important;
+  border-bottom: #444 solid 2px !important;
+}
+
+[data-theme="Dark"] .mine__content__inner {
+  border-top: #0a0a0a solid 3px !important;
+  border-left: #0a0a0a solid 3px !important;
+  border-right: #444 solid 3px !important;
+  border-bottom: #444 solid 3px !important;
+}
+
+[data-theme="Dark"] .mine__face {
+  background-color: #333333 !important;
+  border-color: #555 #111 #111 #555 !important;
+}
+
+[data-theme="Dark"] .mine__drop-down__menu {
+  background-color: #2b2b2b !important;
+  color: #e0e0e0 !important;
+  border-color: #444 !important;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.7) !important;
+}
+
+[data-theme="Dark"] .mine__drop-down__row:hover {
+  background-color: #1565c0 !important;
+  color: #fff !important;
+}
+
+[data-theme="Dark"] .mine__drop-down__separator {
+  border-top-color: #444 !important;
+  border-bottom-color: #1a1a1a !important;
+}
+
+/* Pulsing Hint animations */
+@keyframes hintPulseSafe {
+  0% { box-shadow: 0 0 2px #00e676; transform: scale(1); }
+  50% { box-shadow: 0 0 10px 3px #00e676; transform: scale(1.08); z-index: 50; }
+  100% { box-shadow: 0 0 2px #00e676; transform: scale(1); }
+}
+
+@keyframes hintPulseMine {
+  0% { box-shadow: 0 0 2px #ff1744; transform: scale(1); }
+  50% { box-shadow: 0 0 10px 3px #ff1744; transform: scale(1.08); z-index: 50; }
+  100% { box-shadow: 0 0 2px #ff1744; transform: scale(1); }
+}
+
+@keyframes hintPulseGuess {
+  0% { box-shadow: 0 0 2px #ffea00; transform: scale(1); }
+  50% { box-shadow: 0 0 10px 3px #ffea00; transform: scale(1.08); z-index: 50; }
+  100% { box-shadow: 0 0 2px #ffea00; transform: scale(1); }
+}
+
+.hint-safe {
+  animation: hintPulseSafe 1.2s infinite ease-in-out;
+  outline: 2px solid #00e676 !important;
+  z-index: 20 !important;
+}
+
+.hint-mine {
+  animation: hintPulseMine 1.2s infinite ease-in-out;
+  outline: 2px solid #ff1744 !important;
+  z-index: 20 !important;
+}
+
+.hint-guess {
+  animation: hintPulseGuess 1.2s infinite ease-in-out;
+  outline: 2px solid #ffea00 !important;
+  z-index: 20 !important;
+}
+
+.xray-mine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  opacity: 0.42;
+  pointer-events: none;
+  z-index: 5;
+  filter: drop-shadow(0 0 2px red);
+}
+
